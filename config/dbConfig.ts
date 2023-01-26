@@ -1,5 +1,5 @@
 import * as Mongoose from "mongoose";
-require('dotenv').config()
+require('dotenv').config({systemvars: true})
 
 let database: Mongoose.Connection;
 

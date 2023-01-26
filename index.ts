@@ -1,7 +1,6 @@
 import * as http from "http";
 import App from "./app";
 import { APILogger } from "./logger/logger";
-require('dotenv').config()
 
 const port = process.env.PORT || 3080;
 
