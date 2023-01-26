@@ -1,5 +1,6 @@
 import * as path from "path";
 import * as webpack from "webpack";
+import * as nodeExternals from 'webpack-node-externals';
 
 const environment = process.env.ENVIRONMENT;
 
@@ -42,6 +43,7 @@ module.exports = {
     ]
   },
   target: 'node',
+  externals: [nodeExternals()],
   plugins: [
     new webpack.DefinePlugin(ENVIRONMENT_VARIABLES),
   ]
