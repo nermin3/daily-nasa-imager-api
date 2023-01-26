@@ -29,7 +29,7 @@ if (environment === 'test') {
 module.exports = {
   entry: './index.ts',
   output: {
-    path: "build",
+    path: "path.resolve(__dirname, 'build')",
     filename: 'api.bundle.js'
   },
   resolve: {
