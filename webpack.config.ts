@@ -30,7 +30,7 @@ module.exports = {
   entry: './index.ts',
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'api.bundle.js'
+    filename: 'index.js'
   },
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
